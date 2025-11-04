@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #32cd32;
+}
+
+.container {
+    width: 420px;
+    background-color: #92ff00;
+    border: 2px solid rgba(9, 255, 0, 0.2);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(171, 252, 171, 0.2);
+}
+
+.container h1 {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}
+
+.container form a {
+    text-decoration: none;
+}
+
+/* A caixa que agrupa CADA campo (label + input) */
+.campo-form {
+    margin-bottom: 20px;
+}
+
+/* O rótulo (label) de cada campo */
+.campo-form > label {
+    display: block; /* Faz o label ocupar a linha toda */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Cor mais escura para o texto do label */
+}
+
+/* A legenda para grupos (como radio/checkbox) */
+.campo-form legend {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Regra principal: faz os campos ocuparem 100% da largura */
+.campo-form input[type="text"],
+.campo-form input[type="email"],
+.campo-form input[type="password"],
+.campo-form input[type="date"],
+.campo-form input[type="number"],
+.campo-form select,
+.campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Ajuste para radios e checkboxes não ocuparem 100% */
+.campo-form input[type="radio"],
+.campo-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+.campo-form fieldset .campo-form label {
+    /* Label de radio/checkbox não deve ser negrito */
+    font-weight: normal; 
+}
+
+
+/* Caixa para agrupar radios/checkboxes */
+.campo-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Div para os botões */
+.botoes-form {
+    margin-top: 20px; /* Espaço antes dos botões */
+    text-align: center; /* Centraliza o(s) botão(ões) */
+}
+
+.botoes-form button {
+    background-color: #008000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%; /* Faz o botão ocupar 100% */
+}
+
+/* Estilo para o botão de reset*/
+
+
+.botoes-form button:hover {
+    opacity: 0.9;
+}
+
+/* Estilos para os links "Voltar" e "Cadastre-se" */
+.register-link, .return-main {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+.register-link p a, .return-main p a {
+    color: #004d00;
+    font-weight: bold;
+    text-decoration: none;
+}
+.return-main button {
+    background-color: #777;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+.return-main button:hover {
+    opacity: 0.9;
+}
+
+/* Remove o estilo padrão do link do botão voltar */
+.return-main a {
+    text-decoration: none;
+}

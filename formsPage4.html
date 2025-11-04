@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForms.css">
+    <title>Forms 4 - Outros Campos</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <form class="formulario-demo" action="">
+
+            <h1>IF Forms 4 - Outros</h1>
+
+            <div class="campo-form">
+                <label for="campus">Campus (select):</label>
+                <select id="campus" name="campus">
+                    <option value="">Selecione um campus</option>
+                    <option value="lapa">Lapa</option>
+                    <option value="guanambi">Guanambi</option>
+                    <option value="itapetinga">Itapetinga</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <fieldset>
+                    <legend>Modalidade (radio):</legend>
+                    
+                    <div class="campo-form">
+                        <label for="subsequente">
+                            <input type="radio" id="subsequente" name="modalidade" value="sub">
+                            Subsequente
+                        </label>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="integrado">
+                            <input type="radio" id="integrado" name="modalidade" value="int">
+                            Integrado
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="campo-form">
+                <label for="mensagem">Mensagem (textarea):</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe sua mensagem..."></textarea>
+            </div>
+            
+            <div class="botoes-form">
+                <button type="submit">Enviar</button>
+            </div>
+            
+            <div class="return-main">
+                <a href="index.html"><button type="button">Voltar</button></a>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
